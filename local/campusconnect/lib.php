@@ -97,7 +97,7 @@ function local_campusconnect_ecs_error_notification(ecssettings $ecssettings, $m
         'msg' => $msg
     );
 
-    $eventdata = new stdClass();
+    $eventdata = new core\message\message();
     $eventdata->component = 'local_campusconnect';
     $eventdata->name = 'ecserror';
     $eventdata->userfrom = $fromuser;
